@@ -183,7 +183,7 @@ nav {
 .social-icons {
   display: none;
 }
-.social-icons li{
+.social-icons li {
   font-size: 2rem;
 }
 .links-container {
@@ -209,6 +209,11 @@ nav {
   .nav-toggle {
     display: none;
   }
+  .logo {
+    margin-left: -30px;
+    height: 60px;
+    width: 350px;
+  }
   .links-container {
     height: auto !important;
   }
@@ -218,6 +223,7 @@ nav {
   .links a {
     padding: 0;
     margin: 0 0.5rem;
+    font-size: 1.2rem;
   }
   .links a:hover {
     padding: 0;
@@ -226,6 +232,9 @@ nav {
   .social-icons {
     display: flex;
   }
+  .social-icons li {
+    font-size: 1.2rem;
+  }
   .social-icons a {
     margin: 0 0.5rem;
     color: var(--clr-primary-5);
@@ -233,5 +242,19 @@ nav {
   }
   .social-icons a:hover {
     color: var(--clr-primary-7);
+  }
+}
+@media (max-width:800px) {
+  .logo {
+    margin-left: 0px;
+    height: 60px;
+    width: 400px;
+  }
+}
+@media (max-width:450px) {
+  .logo {
+    margin-left: -30px;
+    height: 50px;
+    width: 300px;
   }
 }
