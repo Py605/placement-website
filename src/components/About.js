@@ -4,6 +4,7 @@ import fullImage from "../assets/images/doon-institute-full-image.jpg"
 import headerImage from "../assets/images/doon-institute-school.jpg"
 import firstImage from "../assets/images/management-students-studying-1.jpg"
 import secondImage from "../assets/images/computer-lab-1.jpg"
+import Footer from './Footer';
 function About() {
   return (
     <section>
@@ -11,12 +12,12 @@ function About() {
 
       <div className="container about-container">
         <h1 className="heading ">About Doon Group Of Institutions</h1>
-        <hr className="underline" />
+        <hr className="about-underline" />
         <p>
           Doon Institute is situated in Shyampur at 9th Milestone on the
           Haridwar-Rishikesh highway. The campus is easily accessible by public
           transport and is a mere 15 minute drive from downtown Rishikesh/
-          Haridwar and just under an hour from Dehra Dun. The imposing 15 acres
+          Haridwar and just under an hour from Dehradun. The imposing 15 acres
           of green campus boasts of airy and well-lit roomy classNamerooms,
           finest laboratories and workshops, a modern computer centre, a library
           endowed with relevant titles and the administrative block.
@@ -89,6 +90,7 @@ function About() {
           essential for any first rate professional technical institute.
         </p>
       </div>
+    <Footer />
     </section>
   );
 }

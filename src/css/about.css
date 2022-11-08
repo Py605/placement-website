@@ -16,8 +16,8 @@
   padding: 1rem;
   margin-bottom: -1rem;
 }
-.underline {
-  width: 65%;
+.about-underline {
+  width: 50rem;
   border: 0.3px solid;
   margin-left: 5%;
   margin-bottom: 1rem;
@@ -62,13 +62,20 @@ img {
   .heading {
     font-size: 3.4rem;
   }
+  .about-underline {
+    width: 30rem;
+  }
 }
 @media (max-width: 700px) {
+  .container{
+    width: 90vw;
+    margin: auto;
+  }
   .heading {
     font-size: 3rem;
   }
-  .underline {
-    width: 85%;
+  .about-underline {
+    width: 25rem;
   }
   p {
     font-size: 1.2rem;
@@ -89,8 +96,8 @@ img {
     letter-spacing: 0px;
     word-spacing: -2px;
   }
-  .underline {
-    width: 55%;
+  .about-underline {
+    width: 75%;
   }
   p {
     font-size: 1rem;

@@ -4,9 +4,12 @@ import headingImage from "../assets/images/college-placement-management.webp"
 import newDrive from "../assets/images/create-new-drive.webp"
 import educationDetails from "../assets/images/education-details.webp"
 import driveDetails from "../assets/images/drive-details.webp"
+import Footer from './Footer';
+
 function Home() {
   return (
-    <div className="container about-container">
+    <section>
+    <div className="home-container ">
       <h1 className="heading ">College Placement management web portal</h1>
       <img
         className="heading-image"
@@ -52,7 +55,7 @@ function Home() {
       <h3>RECRUITER:</h3>
 
       <h4>CREATE NEW DRIVE:</h4>
-      <hr className="underline" />
+      <hr className="home-underline" />
       <p>
         A New Drive contains the student’s information as well as the company
         information. A new drive can be created by filling out the student’s
@@ -74,13 +77,13 @@ function Home() {
         the company to get all the information about the students.
       </p>
       <img
-        className="subHeading-image"
+        className="subHeadings-image"
         src={newDrive}
         alt="doon-institute-school"
       />
 
       <h4>EDUCATION DETAILS:</h4>
-      <hr className="underline" />
+      <hr className="home-underline" />
 
       <p>
         The students who are participating in the drive should fill their
@@ -103,12 +106,12 @@ function Home() {
         for all the students.
       </p>
       <img
-        className="subHeading-image"
+        className="subHeadings-image"
         src={educationDetails}
         alt="doon-institute-school"
       />
       <h4>DRIVE DETAILS :</h4>
-      <hr className="underline" />
+      <hr className="home-underline" />
 
       <p>
         Drive details contain the information of the date of drive and
@@ -130,11 +133,14 @@ function Home() {
         details.
       </p>
       <img
-        class="subHeading-image"
+        class="subHeadings-image"
         src={driveDetails}
         alt="doon-institute-school"
       />
+      
     </div>
+      <Footer />
+      </ section>
   );
 }
 

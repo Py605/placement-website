@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { FaBars, FaFacebook, FaTwitter, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import logo from '../assets/logo/dgi-big-logo.jpg';
 import "../index.css"
+
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
   const linksContainerRef = useRef(null);
@@ -17,6 +18,7 @@ const Navbar = () => {
       linksContainerRef.current.style.height = '0px';
     }
   }, [showLinks]);
+  
   return (
     <nav>
       <div className="nav-center">
