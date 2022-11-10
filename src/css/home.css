@@ -5,10 +5,16 @@
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
-
+.outer{
+  display: flex;
+  flex-direction: column;
+}
+.first{
+  /* min-height: fit-content; */
+}
 .home-container {
   width: 85vw;
-  height: 100vh;
+  height: fit-content;
   margin: auto;
 }
 

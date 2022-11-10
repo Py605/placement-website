@@ -5,9 +5,12 @@ import headerImage from "../assets/images/doon-institute-school.jpg"
 import firstImage from "../assets/images/management-students-studying-1.jpg"
 import secondImage from "../assets/images/computer-lab-1.jpg"
 import Footer from './Footer';
+
 function About() {
   return (
+    <div className='outer'>
     <section>
+      
       <img className="full-image" src={fullImage} alt="doon-institute-school" />
 
       <div className="container about-container">
@@ -90,8 +93,9 @@ function About() {
           essential for any first rate professional technical institute.
         </p>
       </div>
-    <Footer />
     </section>
+    <Footer />
+    </div>
   );
 }
 
