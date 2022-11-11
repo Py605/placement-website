@@ -80,7 +80,6 @@ p {
 
 /*  global classes */
 
-
 /*
 =============== 
 Navbar
@@ -89,6 +88,10 @@ Navbar
 nav {
   background: var(--clr-white);
   box-shadow: var(--light-shadow);
+}
+.nav-center {
+  min-width: 90%;
+  justify-content: space-between;
 }
 .nav-header {
   display: flex;
@@ -129,8 +132,9 @@ nav {
 }
 .social-icons {
   display: none;
+  margin: auto;
 }
-.social-icons li a{
+.social-icons li a {
   font-size: 2rem;
 }
 .links-container {
@@ -139,8 +143,15 @@ nav {
   transition: var(--transition);
 }
 
-
-@media screen and (min-width: 830px) {
+.authenticate-btn {
+  font-size: 1.3rem;
+  background-color: rgb(95, 82, 121);
+  padding: 5px 10px;
+  border: 2px solid rgb(0, 204, 255);
+  cursor: pointer;
+  color: whitesmoke;
+}
+@media screen and (min-width: 800px) {
   .nav-center {
     max-width: 1170px;
     margin: 0 auto;
@@ -199,12 +210,25 @@ nav {
   .social-icons a {
     margin: 0 -0.6rem;
   }
+  .authenticate-btn {
+    font-size: 1.5rem;
+
+  }
 }
-@media (max-width: 830px) {
+@media (max-width: 1050px) {
+  .social-icons {
+    display: none;
+  }
+}
+@media (max-width: 799px) {
   .logo {
     margin-left: 0px;
     height: 60px;
     width: 400px;
+  }
+  .authenticate-btn {
+    font-size: 1.2rem;
+    font-weight: bold;
   }
 }
 @media (max-width: 450px) {
@@ -212,5 +236,9 @@ nav {
     margin-left: 0px;
     height: 50px;
     width: 300px;
+  }
+  .authenticate-btn {
+    font-size: 1rem;
+    font-weight: bold;
   }
 }
